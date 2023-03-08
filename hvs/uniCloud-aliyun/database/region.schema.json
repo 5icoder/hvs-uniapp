@@ -1,0 +1,50 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"region_id": {
+			"title": "区域编号",
+			"bsonType": "string"
+		},
+		"region_name": {
+			"title": "区域名称",
+			"bsonType": "string",
+			"maxLength": 16
+		},
+		"capacity": {
+			"description": "区域人员容量",
+			"title": "区域容量",
+			"bsonType": "int"
+		},
+		"occupy": {
+			"description": "区域人员数量",
+			"title": "区域人数",
+			"bsonType": "int"
+		},
+		"responsible": {
+			"description": "直接责任人信息",
+			"title": "直接责任人",
+			"bsonType": "object",
+			"properties": {
+				"register_id": {
+					"description": "责任人用户id",
+					"bsonType": "string"
+				},
+				"user_name": {
+					"description": "责任人姓名",
+					"bsonType": "string"
+				}
+			}
+		}
+	}
+}

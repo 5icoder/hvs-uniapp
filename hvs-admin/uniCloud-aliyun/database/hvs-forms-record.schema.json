@@ -1,0 +1,45 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "文档ID，系统自动生成"
+		},
+		"register_id": {
+			"bsonType": "string",
+			"description": "用户编号",
+			"title": "用户编号"
+		},
+		"form_id": {
+			"bsonType": "string",
+			"description": "表单编号",
+			"title": "用户编号"
+		},
+		"record": {
+			"description": "记录",
+			"bsonType": "object",
+			"properties": {
+				"data": {
+					"title": "记录数据",
+					"bsonType": "object"
+				},
+				"create_date": {
+					"title": "填表日期",
+					"bsonType": "date"
+				},
+				"status": {
+					"title": "健康状态，[0]正常，[1]异常",
+					"bsonType": "int",
+					"enum": [0, 1]
+				}
+			}
+		}
+	}
+}

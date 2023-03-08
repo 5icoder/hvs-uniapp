@@ -1,0 +1,89 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "校园疫情管理",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/tabBar/report/report",
+			"style": {
+				"navigationBarTitleText": "信息填报"
+			}
+		},
+		{
+			"path": "pages/tabBar/check/check",
+			"style": {
+				"navigationBarTitleText": "异常自检"
+			}
+		},
+		{
+			"path": "pages/tabBar/flow/flow",
+			"style": {
+				"navigationBarTitleText": "流量中心"
+			}
+		},
+		{
+			"path": "pages/tabBar/prevention/prevention",
+			"style": {
+				"navigationBarTitleText": "防疫宣传"
+			}
+		}
+	    ,{
+            "path" : "pages/article-detail/article-detail",
+            "style" :
+            {
+                "navigationBarTitleText": "文章详情",
+                "enablePullDownRefresh": false
+            }
+
+        }
+        ,{
+            "path" : "pages/tabBar/my/my",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/tabBar/report/report",
+			"iconPath": "static/project_icon/report.png",
+			"selectedIconPath": "static/project_icon/report_active.png",
+			"text": "填报"
+		}, {
+			"pagePath": "pages/tabBar/check/check",
+			"iconPath": "static/project_icon/check.png",
+			"selectedIconPath": "static/project_icon/check_active.png",
+			"text": "自检"
+		}, {
+			"pagePath": "pages/tabBar/flow/flow",
+			"iconPath": "static/project_icon/flow.png",
+			"selectedIconPath": "static/project_icon/flow_active.png",
+			"text": "流量"
+		}, {
+			"pagePath": "pages/tabBar/prevention/prevention",
+			"iconPath": "static/project_icon/prevention.png",
+			"selectedIconPath": "static/project_icon/prevention_active.png",
+			"text": "防疫"
+		}]
+	}
+}

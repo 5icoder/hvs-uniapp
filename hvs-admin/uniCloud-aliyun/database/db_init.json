@@ -1,0 +1,170 @@
+// 在本文件中可配置云数据库初始化，数据格式见：https://uniapp.dcloud.io/uniCloud/hellodb?id=db-init
+
+// 编写完毕后对本文件点右键，可按配置规则创建表和添加数据
+
+{
+	"uni-id-users": {
+		"data": [{
+			"register_id": "20080000001",
+			"username": "root",
+			"password": "48be95b6eae41b17050be5788c7a1c9a47a0229e",
+			"role": [
+				"admin"
+			],
+			"status": 0,
+			"register_date": 1619605357600,
+			"register_ip": "127.0.0.1",
+			"token": [],
+			"last_login_date": 1620054427595,
+			"last_login_ip": "127.0.0.1",
+			"login_ip_limit": [],
+			"class": "",
+			"department": "CODE",
+			"pricipal": []
+		}, {
+			"register_id": "20170010103",
+			"username": "teacher",
+			"password": "48be95b6eae41b17050be5788c7a1c9a47a0229e",
+			"role": [
+				"teacher"
+			],
+			"status": 0,
+			"register_date": 1619605357600,
+			"register_ip": "127.0.0.1",
+			"token": [],
+			"last_login_date": 1620054427595,
+			"last_login_ip": "127.0.0.1",
+			"login_ip_limit": [],
+			"class": "",
+			"department": "CODE_IT",
+			"pricipal": "20080000001"
+		}, {
+			"register_id": "17507106",
+			"username": "student",
+			"password": "48be95b6eae41b17050be5788c7a1c9a47a0229e",
+			"role": [
+				"student"
+			],
+			"status": 0,
+			"register_date": 1619605357600,
+			"register_ip": "127.0.0.1",
+			"token": [],
+			"last_login_date": 1620054427595,
+			"last_login_ip": "127.0.0.1",
+			"login_ip_limit": [],
+			"class": "CODE_IT_CS1701",
+			"department": "CODE_IT",
+			"pricipal": "20170010103"
+		}]
+	},
+	"opendb-verify-codes": {
+		"data": []
+	},
+	"uni-id-roles": {
+		"data": []
+	},
+	"uni-id-permissions": {
+		"data": []
+	},
+	"uni-id-log": {
+		"data": []
+	},
+	"opendb-admin-menus": {
+		"data": [{
+			"menu_id": "system_management",
+			"name": "系统管理",
+			"icon": "uni-icons-gear",
+			"url": "",
+			"sort": 1000,
+			"parent_id": "",
+			"permission": [],
+			"enable": true,
+			"create_date": 1602662469396
+		}, {
+			"menu_id": "system_user",
+			"name": "用户管理",
+			"icon": "uni-icons-person",
+			"url": "/pages/system/user/list",
+			"sort": 1010,
+			"parent_id": "system_management",
+			"permission": [],
+			"enable": true,
+			"create_date": 1602662469398
+		}, {
+			"menu_id": "system_role",
+			"name": "角色管理",
+			"icon": "uni-icons-personadd",
+			"url": "/pages/system/role/list",
+			"sort": 1020,
+			"parent_id": "system_management",
+			"permission": [],
+			"enable": true,
+			"create_date": 1602662469397
+		}, {
+			"menu_id": "system_permission",
+			"name": "权限管理",
+			"icon": "uni-icons-locked",
+			"url": "/pages/system/permission/list",
+			"sort": 1030,
+			"parent_id": "system_management",
+			"permission": [],
+			"enable": true,
+			"create_date": 1602662469396
+		}, {
+			"menu_id": "system_menu",
+			"name": "菜单管理",
+			"icon": "uni-icons-settings",
+			"url": "/pages/system/menu/list",
+			"sort": 1040,
+			"parent_id": "system_management",
+			"permission": [],
+			"enable": true,
+			"create_date": 1602662469396
+		}]
+	},
+	"hvs-department": {
+		"data": [{
+			"department_id": "CODE",
+			"type": 0,
+			"name": "编程大学",
+			"parent_id": "",
+			"principal": ["20080000001"]
+		}, {
+			"department_id": "CODE_IT",
+			"type": 1,
+			"name": "计算机信息与技术",
+			"parent_id": "CODE",
+			"principal": ["20170010103"]
+		}, {
+			"department_id": "CODE_IT_CS1701",
+			"type": 2,
+			"name": "计科1701",
+			"parent_id": "CODE_IT",
+			"principal": ["20170010103"]
+		}, {
+			"department_id": "CODE_IT_CS1702",
+			"type": 2,
+			"name": "计科1702",
+			"parent_id": "CODE_IT",
+			"principal": ["20170010103"]
+		}]
+	},
+	"hvs-form": {
+		"data": [{
+				"form_id": "CODE_FORM_001",
+				"title": "每日体温表",
+				"create_date": 1620054427595,
+				"enable": 0,
+				"order": 1,
+				"fields": []
+			}, {
+				"form_id": "CODE_FORM_002",
+				"title": "返校登记表",
+				"create_date": 1620054427595,
+				"enable": 0,
+				"order": 2,
+				"fields": ["name", "phone_number", "license", "gender", "leave", "destination", "abnormal",
+					"caseContact"
+				]
+			}
+		}

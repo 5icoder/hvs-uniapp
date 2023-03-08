@@ -1,0 +1,10 @@
+# IDE
+/**/.hbuilderx/
+/**/.idea/
+
+# uni-modules
+/**/uni_modules/
+
+# dist
+/**/unpackage
+

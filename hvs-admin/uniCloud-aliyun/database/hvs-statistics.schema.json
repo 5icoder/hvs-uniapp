@@ -1,0 +1,46 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"form_id": {
+			"bsonType": "string",
+			"description": "表单编号"
+		},
+		"pricipal": {
+			"bsonType": "string",
+			"description": "责任人编号"
+		},
+		"statistics_date": {
+			"bsonType": "date",
+			"title": "统计日期"
+		},
+		"fill_times": {
+			"bsonType": "int",
+			"description": "填报次数"
+		},
+		"filled_ids": {
+			"bsonType": "array",
+			"arrayType": "string",
+			"description": "全部已填报的用户"
+		},
+		"abnormal_number": {
+			"title": "异常人数",
+			"bsonType": "int"
+		},
+		"abnormal_ids": {
+			"description": "全部状态异常的用户",
+			"bsonType": "array",
+			"arrayType": "string"
+		}
+	}
+}

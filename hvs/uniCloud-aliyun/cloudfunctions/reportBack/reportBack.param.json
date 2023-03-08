@@ -1,0 +1,19 @@
+// 本文件中的json内容将在云函数【运行】时作为参数传给云函数。
+
+// 配置教程参考：https://uniapp.dcloud.net.cn/uniCloud/quickstart?id=runparam
+
+{
+	"register_id": "17507106",
+	"fill_date": "2021-04-23",
+	"form": {
+		"abnormal": "1",
+		"case_contact": "1",
+		"destination": "",
+		"gender": "1",
+		"leave": "0",
+		"license": "561130189182990612",
+		"name": "1",
+		"phone_number": "13116261481"
+	},
+	"form_id": "CODE_FORM_002"
+}
